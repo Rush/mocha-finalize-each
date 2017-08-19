@@ -1,0 +1,20 @@
+{
+  "name": "mocha-finalize-each",
+  "version": "1.0.0",
+  "description": "Finalize each test in a mocha test suite and conditionally fail. This is a better afterEach.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Damian Kaczmarek <rush@rushbase.net>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0"
+  },
+  "peerDependencies": {
+    "mocha": ">2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.0"
+  }
+}
