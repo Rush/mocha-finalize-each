@@ -11,6 +11,7 @@ var finalizeEach = require('mocha-finalize-each');
 describe('some tests', function() {
   var sinonSandbox = sinon.sandbox.create();
 
+  // promise will be resolved after the test code resolves
   finalizeEach(this, promise => {
     // note: always return a promise here
     // note2: if you .catch an error and don't re-throw it your tests will always pass
