@@ -6,6 +6,9 @@ module.exports = function finalizeEach(suite, wrapper) {
   })
   
   suite.on('test', test => {
+    if(!test.fn){
+      return;
+    }
     var originalFn = test.fn;
     
     if(originalFn.length > 0) {
