@@ -10,7 +10,7 @@ module.exports = function finalizeEach(suite, wrapper) {
     
     if(originalFn.length > 0) {
       test.fn = function(done) {
-        return wrapper(Promise.fromCallback(done => {
+        wrapper(Promise.fromCallback(done => {
           return originalFn.call(this, done);
         })).asCallback(done);
       };

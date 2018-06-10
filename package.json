@@ -1,6 +1,6 @@
 {
   "name": "mocha-finalize-each",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Finalize each test in a mocha test suite and conditionally fail. This is a better afterEach.",
   "main": "index.js",
   "scripts": {
